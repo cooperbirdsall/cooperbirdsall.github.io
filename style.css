@@ -1,4 +1,49 @@
 body {
-	background-color: black;
+	background-color: #3D205E;
 	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	color: #FFD542;
+	font-weight: bold;
+	font-size: 8em;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	letter-spacing: 0.05em;
+}
+
+@keyframes rainbowtext {
+	0%, 100% {
+		color: red;
+	}
+	14.3% {
+		color: orange;
+	}
+	28.6% {
+		color: yellow;
+	}
+	42.9% {
+    	color: green;
+  	}
+  	57.2% {
+   	 	color: blue;
+  	}
+  	71.5% {
+  		color: indigo;
+  	}
+  	85.8% {
+  		color: violet;
+  	}
+
+}
+
+.myname {
+	float: left;
+	text-align: left;
+}
+
+.rainbow {
+	animation: rainbowtext 5s linear infinite;
+	font-weight: bold;
+	font-size: 20em;
 }
