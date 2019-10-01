@@ -15,6 +15,7 @@ h1 {
 
 .myname {
 	float: left;
+	margin-left: 2%;
 }
 
 .bigcurly {
@@ -24,7 +25,8 @@ h1 {
 	font-weight: thin;
 	position: absolute;
 	margin-top: -10%;
-	margin-left: 20%;
+	margin-left: 22%;
+	float: left;
 }
 
 img {
@@ -33,4 +35,78 @@ img {
 	position: absolute;
 	margin-left: 20%;
 	margin-top: 11%;
+	float: left;
 }
+
+.links {
+	position: relative;
+	margin-top: 18%;
+	text-align: right;
+	float: right;
+	margin-right: 8%;
+	border-right: 2px solid rgba(255, 255, 255, 0.63);
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.clickme {
+	color: #FFD542;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 2em;
+	animation: make_appear 3s forwards;
+}
+
+.linkedin {
+	max-width: 7%;
+	max-height: 7%;
+	position: absolute;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.63);
+	padding-bottom: 0.2%;
+
+	animation: movelinkedin 3s forwards;
+}
+
+.mail {
+	max-width: 7%;
+	max-height: 7%;
+	position: absolute;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.63);
+	padding-bottom: 0.2%;
+
+	animation: movemail 3s forwards;
+}
+
+@keyframes movelinkedin {
+	from{
+		margin-left: 29%;
+		margin-top: 20%; 
+		opacity: 0;
+	}
+	to {
+		margin-left: 29%;
+		margin-top: 39%; 
+		opacity: 1;
+	}
+}
+
+@keyframes movemail {
+	from {
+		margin-left: 34%;
+		margin-top: 20%;
+		opacity: 0;
+	}
+	to {
+		margin-left: 34%;
+		margin-top: 39%;
+		opacity: 1;
+	}
+}
+
+@keyframes make_appear {
+	from { opacity: 0; }
+	to { opactiy: 1; }
+}
+
+
