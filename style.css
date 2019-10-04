@@ -1,112 +1,111 @@
 body {
 	background-color: #3D205E;
 	font-family: 'Montserrat', sans-serif;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+
+	overflow-y: hidden;
+	height: 100vh; 
 }
 
-h1 {
-	color: #FFD542;
-	font-weight: bold;
-	font-size: 8em;
-	margin-top: 10%;
-	margin-bottom: 1.5%;
-	letter-spacing: 0.05em;
-}
+img {
+	max-width: 50vh;
+	max-height: 50vh;
 
+}
 
 .myname {
-	float: left;
-	margin-left: 2%;
+	color: #FFD542;
+	font-weight: bold;
+	font-size: 11vh;
+
+	margin-bottom: 8vh;
+	margin-left: 3vw;
 }
 
 .bigcurly {
 	font-size: 100vh;
 	color: rgba(255, 255, 255, 0.63);
-	font-family: 'Roboto', sans-serif;
-	font-weight: thin;
-	position: absolute;
-	margin-top: -10%;
-	margin-left: 22%;
-	float: left;
+	font-family: 'Poppins', sans-serif;
+
+	align-self: center;
 }
 
-img {
-	max-width: 50%;
-	max-height:50%;
-	position: absolute;
-	margin-left: 20%;
-	margin-top: 11%;
-	float: left;
+.profile {
+	display: flex;
+	flex-direction: column;
+	animation: make_appear 4s forwards;
+
 }
 
-.links {
-	position: relative;
-	margin-top: 18%;
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	animation: move_in 4s forwards;
+}
+
+.navigation {
+	border-right: 3px solid rgba(255, 255, 255, 0.63);
+	padding-right: 1vw;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
 	text-align: right;
-	float: right;
-	margin-right: 8%;
-	border-right: 2px solid rgba(255, 255, 255, 0.63);
-	padding-right: 1%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	margin-left: auto;
+	margin-right: 1vw;
 }
 
 .clickme {
 	color: #FFD542;
 	text-decoration: none;
 	font-weight: normal;
-	font-size: 2em;
-	animation: make_appear 3s forwards;
+	font-size: 5vh;
 }
 
 .linkedin {
-	max-width: 7%;
-	max-height: 7%;
-	position: absolute;
-	border-bottom: 2px solid rgba(255, 255, 255, 0.63);
-	padding-bottom: 0.2%;
+	max-width: 7vh;
+	max-height: 7vh;
+	border-bottom: 2px solid #FFD542;
 
-	animation: movelinkedin 3s forwards;
+	padding-top: 1vh;
+	padding-bottom: 0.3vh;
+	margin-left: 0.5vw;
 }
 
 .mail {
-	max-width: 7%;
-	max-height: 7%;
-	position: absolute;
-	border-bottom: 2px solid rgba(255, 255, 255, 0.63);
-	padding-bottom: 0.2%;
-
-	animation: movemail 3s forwards;
+	max-width: 7vh;
+	max-height: 7vh;
+	border-bottom: 2px solid #FFD542;
+	
+	padding-top: 1vh;
+	padding-bottom: .3vh;
+	margin-right: 0.5vw;
 }
 
-@keyframes movelinkedin {
-	from{
-		margin-left: 29%;
-		margin-top: 20%; 
-		opacity: 0;
-	}
-	to {
-		margin-left: 29%;
-		margin-top: 39%; 
-		opacity: 1;
-	}
+.iconic:hover {
+	border-bottom: 2px dotted rgba(255, 255, 255, 0.63);
 }
 
-@keyframes movemail {
-	from {
-		margin-left: 34%;
-		margin-top: 20%;
-		opacity: 0;
-	}
-	to {
-		margin-left: 34%;
-		margin-top: 39%;
-		opacity: 1;
-	}
+.clickme:hover {
+	color: rgba(255, 255, 255, 0.63);
 }
 
 @keyframes make_appear {
 	from { opacity: 0; }
-	to { opactiy: 1; }
+	to { opacity: 1; }
 }
 
-
+@keyframes move_in {
+	from{
+		padding-top: 7vh;
+		opacity: 0;
+	}
+	to {
+		padding-top: 1vh;
+		opacity: 1;
+	}
+}
