@@ -1,35 +1,43 @@
 <!DOCTYPE HTML>
-<html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:bold,regular|Poppins:regular" rel="stylesheet">
-		<title>Cooper Birdsall</title>
+		<link href="https://fonts.googleapis.com/css?family=Staatliches|Open+Sans:regular,light,semibold,light-italic" rel="stylesheet">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Student portfolio website for Cooper Birdsall!">
+		<script>
+
+		</script>
+		<title>Cooper Birdsall</title>
 	</head>
 	<body>
-		<div class="myname">
-			<h1>coo<br>
-				per <br>
-				bird<br>
-				sall
-			</h1>
+		<img src="black-blob-desktop.svg" class="blob" id="black-blob"/>
+		<img src="orange-blob-desktop.svg" class="blob"/>
+		<h1>cooper birdsall</h1>
+		<div id="links">
+			<a href="#me" class="link">me</a>
+			<a href="" class="link">portfolio</a>
+			<a href="#resume" class="link">résumé</a>
 		</div>
-		<div class="bigcurly">}</div>
-		<div class="profile">
-			<img src="circlepicture.png"/>
-			<div class="icons">
-				<a href="mailto:cooper_birdsall@brown.edu" target="_blank"><img class="mail iconic" src="mail.png"/></a>
-				<a href="http://linkedin.com/in/cooper-birdsall" target="_blank"><img class="linkedin iconic" src="linkedin.png"/></a>
+		<div id="me" class="section">
+			<h2 class="title">me</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at erat. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Et netus et malesuada fames ac turpis. Maecenas sed enim ut sem viverra. Arcu ac tortor dignissim convallis aenean et tortor at risus.</p>
+			<div id="icons">
+				<a href="mailto:cooper_birdsall@brown.edu"><img width="45vw" src="mail.svg"/></a>
+				<a href="http://linkedin.com/in/cooper-birdsall"><img width="45vw" src="linkedin.svg"/></a>
 			</div>
 		</div>
-		<div class="navigation">
-			<a class="clickme" target="_blank" href="">me!</a>
-			<br>
-			<a class="clickme" target="_blank" href="resume.pdf">résumé</a>
-			<br>
-			<a class="clickme" target="_blank" href="resume.pdf">portfolio</a>
+		<div id="resume" class="section">
+			<h2 class="title">résumé</h2>
+			<a href="resume.pdf" target="_blank"><p>[open in new tab]</p></a>
+			<iframe src="resume.pdf" width="120%" height="750em"></iframe>
 		</div>
+		<div id="credits" class="section">
+			<p>last updated: Nov. 2019 
+				<br>
+				icons:<a class="link" target="_blank" href="http://flaticon.com">flaticon.com</a></p>
+		</div>
+		<img src="black-down.svg" class="down" id="black-down"/>
+		<img src="orange-down.svg" class="down"/>
 	</body>
 </html>
