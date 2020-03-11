@@ -26,9 +26,10 @@ body {
 h1 {
 	margin-top: 60%;
 	color: white;
-	font-size: 14vw;
+	font-size: 20vw;
 	font-family: 'Staatliches';
 	margin-bottom: -2vw;
+	text-align: center;
 }
 
 .link {
