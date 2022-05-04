@@ -22,6 +22,10 @@ accent red 7.5% opacity: #F6E8E9
   src: url("./fonts/Staatliches.ttf");
 }
 
+html {
+  overflow-x: hidden;
+}
+
 header {
   display: none;
 }
