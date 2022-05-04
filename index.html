@@ -1,71 +1,101 @@
 <!DOCTYPE HTML>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Staatliches|Open+Sans:regular,light,semibold,light-italic" rel="stylesheet">
 		<link rel='icon' href='favicon.svg' type='image/svg'/>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-		<link rel="stylesheet" media="screen and (max-width: 600px)" href="phonestyle.css">
+		<link rel="stylesheet" media="screen and (max-width: 800px)" href="phonestyle.css">
+		<link rel="stylesheet" media="screen and (max-height: 375px)" href="shortstyle.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Student portfolio website for Cooper Birdsall!">
-		<script>
-
-		</script>
+		<meta name="description" content="Personal website for Cooper Birdsall!">
 		<title>Cooper Birdsall</title>
 	</head>
 	<body>
-		<img src="black-blob-desktop.svg" class="blob" id="black-blob"/>
-		<img src="orange-blob-desktop.svg" class="blob"/>
-		<h1>cooper birdsall</h1>
-		<div id="links">
-			<a href="#me" class="link">me</a>
-			<a href="#portfolio" class="link">portfolio</a>
-			<a href="#resume" class="link">résumé</a>
-		</div>
-		<div id="me" class="section">
-			<h2 class="title">me</h2>
-			<p>I'm a senior at Brown University studying computer science (and user experience design). Interested in hot chocolate, crocheting, crossword puzzles, and the 2001 direct-to-video masterpiece Scooby Doo and the Cyber Chase.</p>
-			<div id="icons">
-				<a href="mailto:cooper_birdsall@brown.edu" target="_blank"><img width="45vw" src="mail.svg"/></a>
-				<a href="http://linkedin.com/in/cooper-birdsall" target="_blank"><img width="45vw" src="linkedin.svg"/></a>
+		<div id="sidebar">
+			<h1>Cooper<br>Birdsall</h1>
+			<div id="links">
+				<a class="dot-link" href="mailto:cooperbirdsall.com"><div class="dot"><img src="./icons/mail.svg" class="icon"/></div></a>
+				<a class="dot-link" href="https://www.linkedin.com/in/cooper-birdsall"><div class="dot"><img src="./icons/linkedin.svg" class="icon"/></div></a>
+				<a class="dot-link" href="https://github.com/cooperbirdsall"><div class="dot"><img src="./icons/github.svg" class="icon"/></div></a>
 			</div>
+			<a href="resume.pdf">résumé</a>
 		</div>
-		<div id="portfolio" class="section">
-			<h2 class="title">portfolio</h2>
-			<div id="portfolio-wrapper">
-				<a href="portfolio/quirk.pdf" class="portfolio-item">
-					<img src="portfolio/quirk.png" class="portfolio-image"/>
-					<p class="portfolio-title">quirk (app)</p>
-					<p class="portfolio-text">iterative design</p>
-				</a>
-				<a href="portfolio/heatmap.pdf" class="portfolio-item">
-					<img src="portfolio/heatmap.png" class="portfolio-image"/>
-					<p class="portfolio-title">a/b testing</p>
-					<p class="portfolio-text">heatmaps & eye-tracking</p>
-				</a>
-				<a href="portfolio/mailroom.pdf" class="portfolio-item">
-					<img src="portfolio/mailroom.png" class="portfolio-image"/>
-					<p class="portfolio-title">mailroom</p>
-					<p class="portfolio-text">personas & storyboarding</p>
-				</a>
-				<a href="portfolio/bajas.pdf" class="portfolio-item">
-					<img src="portfolio/bajas.png" class="portfolio-image"/>
-					<p class="portfolio-title">baja's redesign</p>
-					<p class="portfolio-text">responsiveness</p>
-				</a>
-			</div>
-		</div>
-		<div id="resume" class="section">
-			<h2 class="title">résumé</h2>
-			<a href="resume.pdf" target="_blank"><p>[open in new tab]</p></a>
-			<iframe id="frame" src="resume.pdf" width="100%" height="750em"></iframe>
-		</div>
-		<div id="credits" class="section">
-			<p>last updated: Dec. 2020
-				<br>
-				icons: flaticon.com</p>
-		</div>
-		<img src="black-down.svg" class="down" id="black-down"/>
-		<img src="orange-down.svg" class="down"/>
+		<main>
+			<!-- only visible on mobile -->
+			<header>
+				<div id="links">
+					<a class="dot-link" href="mailto:cooperbirdsall.com"><div class="dot"><img src="./icons/mail.svg" class="icon"/></div></a>
+					<a class="dot-link" href="https://www.linkedin.com/in/cooper-birdsall"><div class="dot"><img src="./icons/linkedin.svg" class="icon"/></div></a>
+					<a class="dot-link" href="https://github.com/cooperbirdsall"><div class="dot"><img src="./icons/github.svg" class="icon"/></div></a>
+				</div>
+				<a href="resume.pdf">résumé</a>
+			</header>
+			<h1 id="mobile-title">Cooper<br>Birdsall</h1>
+			<!-- end of mobile additions -->
+			<section>
+				<h2>Me</h2>
+				<p>I'm a senior at <a href="https://www.brown.edu/">Brown University</a>
+					 studying computer science with a focus on design.</p>
+				<p>Academically, I’m interested in human-computer interaction, frontend
+					 development, and linguistics.</p>
+				<p>My other interests include hot chocolate,
+					<a href="https://letterboxd.com/cupp/">movies</a>,
+					 crossword puzzles, the BBC quiz show
+					 <a href="https://en.wikipedia.org/wiki/Only_Connect">Only Connect</a>,
+					 and the 2001 direct-to-video masterpiece
+					 <i>Scooby Doo and the Cyber Chase.</i></p>
+			</section>
+			<section>
+				<h2>Projects</h2>
+				<div id="projects-container">
+					<a class="project-link" href="">
+						<div class="project">
+							<div class="project-circle">
+								<img class="project-image" src="./portfolio/crossword.png"/>
+							</div>
+							<a href="">Crossword Editor</a>
+							<p class="project-description">React, Java</p>
+						</div>
+					</a>
+					<a class="project-link" href="https://selfe.cs.brown.edu/">
+						<div class="project">
+							<div class="project-circle">
+								<img class="project-image" src="./portfolio/selfe.png"/>
+							</div>
+							<a href="https://selfe.cs.brown.edu/">Self-E</a>
+							<p class="project-description">Flutter/Dart</p>
+						</div>
+					</a>
+					<a class="project-link" href="https://cooperbirdsall.com/onlyconnect/">
+						<div class="project">
+							<div class="project-circle">
+								<img class="project-image" src="./portfolio/onlyconnect.png"/>
+							</div>
+							<a href="https://cooperbirdsall.com/onlyconnect/">Only Connect</a>
+							<p class="project-description">React</p>
+						</div>
+					</a>
+					<a class="project-link" href="./portfolio/quirk.pdf">
+						<div class="project">
+							<div class="project-circle">
+								<img class="project-image" src="./portfolio/quirk.png"/>
+							</div>
+							<a href="./portfolio/quirk.pdf">Quirk Redesign</a>
+							<p class="project-description">Figma</p>
+						</div>
+					</a>
+					<a class="project-link" href="./portfolio/mailroom.pdf">
+						<div class="project">
+							<div class="project-circle">
+								<img class="project-image" src="./portfolio/mailroom.png"/>
+							</div>
+							<a href="./portfolio/mailroom.pdf">Mailroom Personas</a>
+							<p class="project-description">Storyboarding</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<p id="footer-text">designed by cooper birdsall © may 2022</p>
+		</main>
 	</body>
 </html>
