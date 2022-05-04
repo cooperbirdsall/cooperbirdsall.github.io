@@ -24,8 +24,10 @@ header {
 }
 
 #mobile-title {
+  width: 75%;
   display: block;
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0px 70px 0px;
+  border-bottom: 2px solid #A31621;
 }
 
 main {
@@ -34,6 +36,7 @@ main {
 
 p {
   font-size: 18px;
+  width: 75%;
 }
 
 a {
